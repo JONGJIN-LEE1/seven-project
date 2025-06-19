@@ -66,7 +66,7 @@
 
 ## 4.1 그룹 목록 조회
 - API URL(POST /groups/:groupId/likes) & 요청 예시(ttp://localhost:3000/groups?page=1&limit=10&orderBy=createdAt&order=desc)
-- 응답 예시
+- 응답 예시 (200 OK)
  ```
  {
     "data": [
@@ -124,7 +124,7 @@
 ```
 ## 4.2 그룹 상세 조회  
 - API URL(GET  /groups/:groupId) & 요청 예시(http://localhost:3000/groups/4)
-- 응답 예시
+- 응답 예시 (200 OK)
 ```
 {
 "id": 4,
@@ -178,8 +178,22 @@
 "badges": []
 }
 ```
-## 4.3 그룹 추천
-
+## 4.3 그룹 추천  
+- API URL(POST /groups/:groupId/likes) & 요청 예시(http://localhost:3000/groups/6/likes)
+- 응답 예시 (200 OK)
+```
+{
+"message": "그룹을 추천했습니다."
+}
+```
+## 4.4 그룹 추천 취소  
+- API URL(DELETE /groups/:groupId/likes) & 요청 예시(http://localhost:3000/groups/1/likes)
+- 응답 예시 (200 OK)
+```
+{
+"message": "그룹 추천을 취소했습니다."
+}
+```
 ---
 
 
