@@ -51,7 +51,7 @@
 # 3. 📌 담당한 작업 
  
 ## 3.1 그룹 목록 조회
- 
+
 - 각 그룹의 그룹명, 닉네임, 사진, 태그, 목표 횟수, 추천수, 참여자수가 표시되며 페이지네이션이 가능
 - 최신순, 추천순, 참여자순으로  정렬이 가능
 
@@ -216,8 +216,29 @@
 ---  
 # 6. 📌 문제점 및 해결 과정  
 
-## 6.1 
+## 6.1 git pull upstream main을 진행하지 않고 로컬에서 작업하다 충돌  
+: git stash를 이용하여 임시 저장하고 난 다음 git pull upstream main 진행, 후에 충돌 마커 확인하면서 충돌 해결  
 
+## 6.2 코딩 컨벤션 맞추는 데 어려움을 느낌(필드명 통일이나 대소문자 통합 등)  
+: 데일리 스크럼 외에도 주기적으로 팀원들과 소통하며 맞추려고 노력  
+
+## 6.3 커밋을 잔뜩 쌓아두고 진행하다가 충돌이 났는데 충돌 발견도 어려울 뿐더러 해결도 힘듦  
+: 해당 PR을 닫은 후, 새로 처음부터 다시 시작  
+
+## 6.4 GroupRecommend 모델과 Participant 모델에 unique가 없어서 에러 발생  
+: [@@unique([groupId, userId]) // 복합 유니크 제약 조건 추가로 에러 해결  
+
+## 6.5 mock 데이터와 seed 데이터를 받아왔는데, seed 파일 내 경로가 mockData라 데이터를 못 받아오는 문제 발생  
+: 경로를 파일명과 일치하게 mock로 변경  
+```
+const { GROUPS, TAGS, USERS, EXERCISE_RECORDS, GROUP_RECOMMENDS, RANKS, PHOTOS, PARTICIPANT } = require('./mockData');
+```
+```
+const { GROUPS, TAGS, USERS, EXERCISE_RECORDS, GROUP_RECOMMENDS, RANKS, PHOTOS, PARTICIPANT } = require('./mock');
+```
+
+## 6.6 swagger 테스트 중 postman과 newman 등을 이용하여 자동 테스트가 안 되는 문제  
+: 
 
 # 7. 📃 회고록(느낀 점)
  
