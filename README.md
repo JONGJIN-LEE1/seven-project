@@ -33,14 +33,14 @@
 | --- | --- |
 | Backend | Node.js 22.0.0LTS (Express) |
 | Database | Prisma
-PostgreSQL |
+           | PostgreSQL |
 | 테스트 | postman |
 | API 문서화 | Swagger |
 | 협업 도구 | Discord
-GitHub(https://github.com/singnyeo/nb02-seven-team2)
-Notion([📚 프로젝트 세부 계획](https://www.notion.so/206fca01d5c980689666cc5d59fbef08?pvs=21) ) |
+| GitHub | (https://github.com/singnyeo/nb02-seven-team2) |
+| Notion | ([📚 프로젝트 세부 계획](https://www.notion.so/206fca01d5c980689666cc5d59fbef08?pvs=21) |
 | 일정 관리 | GitHub Issues
-Notion |
+           | Notion |
 
 ---
 
