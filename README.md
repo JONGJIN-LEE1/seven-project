@@ -195,6 +195,7 @@
 ![image.png](attachment:5c61a460-4675-431d-916d-f011fccbceb5:image.png)  
 
 
+
 ### 4.3 그룹 추천  
 - API URL(POST /groups/:groupId/likes) & 요청 예시(http://localhost:3000/groups/6/likes)
 - 응답 예시 (200 OK)
@@ -204,6 +205,7 @@
 }
 ```
 ![image.png](attachment:1ad0358d-7c75-4240-97ba-90ff8d1f8ef2:image.png)  
+
 
 
 ### 4.4 그룹 추천 취소  
@@ -219,6 +221,7 @@
 ---
 
 
+
 # 5. 📌 운동 기록 API 테스트 예시
  
 [운동 기록 API 테스트] (https://www.notion.so/API-217a1c7d0d6a808b820bda0aec5623f8)
@@ -228,22 +231,39 @@
 ---  
 
 
+
 # 6. 📌 문제점 및 해결 과정  
 
 ### 6.1 git pull upstream main을 진행하지 않고 로컬에서 작업하다 충돌  
-: git stash를 이용하여 임시 저장하고 난 다음 git pull upstream main 진행, 후에 충돌 마커 확인하면서 충돌 해결  
+
+: git stash를 이용하여 임시 저장하고 난 다음 git pull upstream main 진행, 
+  후에 충돌 마커 확인하면서 충돌 해결  
+
 
 ### 6.2 코딩 컨벤션 맞추는 데 어려움을 느낌(필드명 통일이나 대소문자 통합 등)  
+
 : 데일리 스크럼 외에도 주기적으로 팀원들과 소통하며 맞추려고 노력  
 
-### 6.3 커밋을 잔뜩 쌓아두고 진행하다가 충돌이 났는데 충돌 발견도 어려울 뿐더러 해결도 힘듦  
+
+### 6.3 커밋을 잔뜩 쌓아두고 진행하다가 충돌이 났는데 
+###     충돌 발견도 어려울 뿐더러 해결도 힘듦  
+
+
 : 해당 PR을 닫은 후, 새로 처음부터 다시 시작  
 
+
 ### 6.4 GroupRecommend 모델과 Participant 모델에 unique가 없어서 에러 발생  
+
 : [@@unique([groupId, userId]) // 복합 유니크 제약 조건 추가로 에러 해결  
 
-### 6.5 mock 데이터와 seed 데이터를 받아왔는데, seed 파일 내 경로가 mockData라 데이터를 못 받아오는 문제 발생  
+
+### 6.5 mock 데이터와 seed 데이터를 받아왔는데, 
+###     seed 파일 내 경로가 mockData라 데이터를 못 받아오는 문제 발생  
+
+
 : 경로를 파일명과 일치하게 mock로 변경  
+
+
 ```
 const { GROUPS, TAGS, USERS, EXERCISE_RECORDS, GROUP_RECOMMENDS, RANKS, PHOTOS, PARTICIPANT } = require('./mockData');
 ```
@@ -251,8 +271,13 @@ const { GROUPS, TAGS, USERS, EXERCISE_RECORDS, GROUP_RECOMMENDS, RANKS, PHOTOS, 
 const { GROUPS, TAGS, USERS, EXERCISE_RECORDS, GROUP_RECOMMENDS, RANKS, PHOTOS, PARTICIPANT } = require('./mock');
 ```
 
+
 ### 6.6 swagger 테스트 중 postman과 newman 등을 이용하여 자동 테스트가 안 되는 문제  
+
 : swagger 폴더에 swagger.js(info, title 내용 들어있는 부분)와 // Swagger/OpenAPI 문서를 JavaScript 객체로 조립하는 구조 openapi.yaml(summary 내용 들어있는 부분) 이렇게 두 파일로 나눴는데, 하나의 파일로 합침
+
+---
+
 
 # 7. 📃 회고록(느낀 점)
  
