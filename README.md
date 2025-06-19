@@ -16,7 +16,8 @@
  
 ## 1.1 목적 
  
-운동 인증 커뮤니티 서비스로, 사용자들은 본인이 원하는 그룹을 등록하거나 참여하는 등 타인과의 공통된 취미를 공유하고, 인증하는 플랫폼 구축
+운동 인증 커뮤니티 서비스로, 사용자들은 본인이 원하는 그룹을 등록하거나 참여하는 등  
+타인과의 공통된 취미를 공유하고, 인증하는 플랫폼 구축
  
 ## 1.2 주요 기능
  
@@ -122,6 +123,8 @@
             "badges": []
         },
 ```
+![image.png](attachment:60b6aed8-7879-4586-ac07-cf5901102e24:image.png)  
+
 ## 4.2 그룹 상세 조회  
 - API URL(GET  /groups/:groupId) & 요청 예시(http://localhost:3000/groups/4)
 - 응답 예시 (200 OK)
@@ -178,6 +181,8 @@
 "badges": []
 }
 ```
+![image.png](attachment:5c61a460-4675-431d-916d-f011fccbceb5:image.png)  
+
 ## 4.3 그룹 추천  
 - API URL(POST /groups/:groupId/likes) & 요청 예시(http://localhost:3000/groups/6/likes)
 - 응답 예시 (200 OK)
@@ -186,6 +191,7 @@
 "message": "그룹을 추천했습니다."
 }
 ```
+![image.png](attachment:1ad0358d-7c75-4240-97ba-90ff8d1f8ef2:image.png)
 ## 4.4 그룹 추천 취소  
 - API URL(DELETE /groups/:groupId/likes) & 요청 예시(http://localhost:3000/groups/1/likes)
 - 응답 예시 (200 OK)
@@ -194,16 +200,21 @@
 "message": "그룹 추천을 취소했습니다."
 }
 ```
+![image.png](attachment:c9801a13-930e-46f4-bd06-839ea9bbf5f9:image.png)  
+
 ---
 
 
-# 5. 📌 테스트 예시
+# 5. 📌 운동 기록 API 테스트 예시
  
 [운동 기록 API 테스트] (https://www.notion.so/API-217a1c7d0d6a808b820bda0aec5623f8)
  
 [swagger 테스트] (https://www.notion.so/Swagger-API-217a1c7d0d6a80c697afe7036a4ff731)  
 
----
+---  
+# 6. 📌 문제점 및 해결 과정  
+
+## 6.1 
 
 
 # 7. 📃 회고록(느낀 점)
