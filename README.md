@@ -301,7 +301,7 @@ const { GROUPS, TAGS, USERS, EXERCISE_RECORDS, GROUP_RECOMMENDS, RANKS, PHOTOS, 
 ---  
 
 
-### 6.6 swagger 테스트 중 postman과 newman 등을 이용하여 자동 테스트가 안 되는 문제  
+### 6.6 swagger 테스트 중 postman과 newman 등을 이용하여 자동 테스트가 안되는 문제  
 
 : swagger 폴더에 swagger.js(info, title 내용 들어있는 부분)와 // Swagger/OpenAPI 문서를 JavaScript 객체로 조립하는 구조 openapi.yaml(summary 내용 들어있는 부분) 이렇게 두 파일로 나눴는데, 하나의 파일로 합침
 
