@@ -1,4 +1,4 @@
-# seven-project 개발 보고서  
+# [seven-project 개발 보고서]  
 
 
 프로젝트명 : seven 프로젝트  
