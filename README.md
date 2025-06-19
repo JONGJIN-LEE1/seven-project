@@ -135,7 +135,8 @@
             "badges": []
         },
 ```
-![image.png](attachment:60b6aed8-7879-4586-ac07-cf5901102e24:image.png)  
+  ![그룹 목록조회](https://github.com/user-attachments/assets/c2243fb4-86f3-4f47-a794-75b8daf44b38)
+
 
 
 ### 4.2 그룹 상세 조회  
@@ -196,7 +197,9 @@
 "badges": []
 }
 ```
-![image.png](attachment:5c61a460-4675-431d-916d-f011fccbceb5:image.png)  
+  
+![그룹 상세조회](https://github.com/user-attachments/assets/6d153a26-3d24-4967-be26-5d34ca0ef667)
+
 
 
 
@@ -204,15 +207,18 @@
 
 - API URL(POST /groups/:groupId/likes) & 요청 예시(http://localhost:3000/groups/6/likes)
   
-- 응답 예시 (200 OK)
+- 응답 예시 (409 Conflict)
 
   
 ```
 {
-"message": "그룹을 추천했습니다."
+"success": false,
+"message": "이미 추천한 그룹입니다.",
 }
 ```
-![image.png](attachment:1ad0358d-7c75-4240-97ba-90ff8d1f8ef2:image.png)  
+
+  ![그룹 추천(에러상황)](https://github.com/user-attachments/assets/c211ccc2-71a6-45ce-9a54-b422e0b4e9dd)
+
 
 
 
@@ -227,7 +233,9 @@
 "message": "그룹 추천을 취소했습니다."
 }
 ```
-![image.png](attachment:c9801a13-930e-46f4-bd06-839ea9bbf5f9:image.png)  
+
+ ![그룹 추천 취소](https://github.com/user-attachments/assets/12bc2d65-d157-48a9-b4fe-50dd17d046be)
+
 
 ---
 
