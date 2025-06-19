@@ -30,17 +30,13 @@
 # 2. ⚙️ 기술 스택 및 협업 도구
 
 | **분류** | **사용 예정 도구** |
-| --- | --- |
+| :------ | :----------------- |
 | Backend | Node.js 22.0.0LTS (Express) |
-| Database | Prisma
-           | PostgreSQL |
-| 테스트 | postman |
+| Database | Prisma, PostgreSQL |
+| 테스트 | Postman |
 | API 문서화 | Swagger |
-| 협업 도구 | Discord
-| GitHub | (https://github.com/singnyeo/nb02-seven-team2) |
-| Notion | ([📚 프로젝트 세부 계획](https://www.notion.so/206fca01d5c980689666cc5d59fbef08?pvs=21) |
-| 일정 관리 | GitHub Issues
-           | Notion |
+| 협업 도구 | Discord, GitHub ([singnyeo/nb02-seven-team2](https://github.com/singnyeo/nb02-seven-team2)), Notion ([📚 프로젝트 세부 계획](https://www.notion.so/206fca01d5c980689666cc5d59fbef08?pvs=21)) |
+| 일정 관리 | GitHub Issues, Notion |
 
 ---
 
@@ -80,7 +76,9 @@
 
 ## 6. 📌 테스트 예시
 
+[운동 기록 API 테스트] (https://www.notion.so/API-217a1c7d0d6a808b820bda0aec5623f8)
 
+[swagger 테스트] (https://www.notion.so/Swagger-API-217a1c7d0d6a80c697afe7036a4ff731)
 ---
 
 
