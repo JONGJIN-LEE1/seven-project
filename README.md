@@ -62,8 +62,123 @@
 
 ---
 
-# 4. 📌 개발 예시 
-- API URL(POST /groups/:groupId/likes)
+# 4. 📌 개발 예시  
+
+## 4.1 그룹 목록 조회
+- API URL(POST /groups/:groupId/likes) & 요청 예시(ttp://localhost:3000/groups?page=1&limit=10&orderBy=createdAt&order=desc)
+- 응답 예시
+ ```
+ {
+    "data": [
+        {
+            "id": 1,
+            "name": "헬스마스터",
+            "description": "",
+            "photoUrl": "https://example.com/healthmaster.jpg",
+            "goalRep": 10,
+            "discordWebhookUrl": "",
+            "discordInviteUrl": "",
+            "likeCount": 3,
+            "tags": [
+                "헬스",
+                "웨이트트레이닝",
+                "근력운동",
+                "피트니스"
+            ],
+            "owner": {
+                "id": 1,
+                "nickname": "user1",
+                "createdAt": 1750066272982,
+                "updatedAt": 1750066272982
+            },
+            "participants": [
+                {
+                    "id": 1,
+                    "nickname": "user1",
+                    "createdAt": 1750066272982,
+                    "updatedAt": 1750066272982
+                },
+                {
+                    "id": 6,
+                    "nickname": "user6",
+                    "createdAt": 1750066272982,
+                    "updatedAt": 1750066272982
+                },
+                {
+                    "id": 11,
+                    "nickname": "user11",
+                    "createdAt": 1750066272982,
+                    "updatedAt": 1750066272982
+                },
+                {
+                    "id": 16,
+                    "nickname": "user16",
+                    "createdAt": 1750066272982,
+                    "updatedAt": 1750066272982
+                }
+            ],
+            "createdAt": 1750066272986,
+            "updatedAt": 1750066272986,
+            "badges": []
+        },
+```
+## 4.2 그룹 상세 조회  
+- API URL(GET  /groups/:groupId) & 요청 예시(http://localhost:3000/groups/4)
+- 응답 예시
+```
+{
+"id": 4,
+"name": "자전거여행",
+"description": "자전거로 전국을 누비는 사람들",
+"photoUrl": "https://example.com/bikeclub.jpg",
+"goalRep": 15,
+"discordWebhookUrl": "https://discord.gg/bikeclub",
+"discordInviteUrl": "https://discord.gg/invitebike",
+"likeCount": 2,
+"tags": [
+"자전거",
+"사이클링",
+"여행",
+"아웃도어"
+],
+"owner": {
+"id": 4,
+"nickname": "user4",
+"createdAt": 1750080053488,
+"updatedAt": 1750080053488
+},
+"participants": [
+{
+"id": 4,
+"nickname": "user4",
+"createdAt": 1750080053488,
+"updatedAt": 1750080053488
+},
+{
+"id": 9,
+"nickname": "user9",
+"createdAt": 1750080053488,
+"updatedAt": 1750080053488
+},
+{
+"id": 14,
+"nickname": "user14",
+"createdAt": 1750080053488,
+"updatedAt": 1750080053488
+},
+{
+"id": 19,
+"nickname": "user19",
+"createdAt": 1750080053488,
+"updatedAt": 1750080053488
+}
+],
+"createdAt": 1750080053504,
+"updatedAt": 1750080053504,
+"badges": []
+}
+```
+## 4.3 그룹 추천
 
 ---
 
