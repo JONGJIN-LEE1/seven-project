@@ -248,11 +248,13 @@
 
 
 
-# 5. 📌 운동 기록 API 테스트 예시
+# 5. 📌 운동 기록 API 및 이미지 업로드 API 테스트 예시 
  
-[운동 기록 API 테스트] (https://www.notion.so/API-217a1c7d0d6a808b820bda0aec5623f8)
+[운동 기록 API 테스트 및 이미지 업로드 API 테스트] (https://www.notion.so/API-217a1c7d0d6a808b820bda0aec5623f8)
  
 [swagger 테스트] (https://www.notion.so/Swagger-API-217a1c7d0d6a80c697afe7036a4ff731)  
+
+
 
 ---  
 
